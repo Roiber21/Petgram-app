@@ -6,7 +6,7 @@ import { Div, Img, Span } from '../components/UserForm/styles'
 import { Helmet } from 'react-helmet'
 import { useLoginMutation } from '../hooks/useLoginMutation'
 
-export const NotRegisteredUser = () => {
+export default () => {
   const { activateAuth } = useContext(Context)
 
   return (
