@@ -23,9 +23,6 @@ export const PhotoCard = ({ id, Liked, likes = 0, src = DEFAULT_IMAGE }) => {
   return (
     <Article ref={element}>
 
-      <Img5 src={require('../../images/opciones.png')} />
-      <Img6 src={require('../../images/user.png')} />
-
       {
         show && (<>
           <Link Link to={`/detail/${id}`}>
@@ -35,9 +32,6 @@ export const PhotoCard = ({ id, Liked, likes = 0, src = DEFAULT_IMAGE }) => {
 
           </Link>
           <FavButton Liked={Liked} likes={likes} onClick={handleFavClick} />
-          <Img2 src={require('../../images/charla.png')} />
-          <Img3 src={require('../../images/dm.png')} />
-          <Img4 src={require('../../images/save.png')} />
 
         </>
 
