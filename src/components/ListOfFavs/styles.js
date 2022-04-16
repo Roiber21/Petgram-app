@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link as LinkRouter } from '@reach/router'
-
+import { fadeIn } from '../../styles/animation'
 export const Link = styled(LinkRouter)`
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0,0,0,.3);
@@ -17,6 +17,8 @@ export const Link = styled(LinkRouter)`
 `
 export const Grid = styled.div`
     padding-top: 32px;
+    ${fadeIn()};
+    
 `
 export const Image = styled.img`
     object-fit: cover;

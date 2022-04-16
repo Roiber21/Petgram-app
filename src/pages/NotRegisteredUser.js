@@ -3,12 +3,18 @@ import { UserForm } from '../components/UserForm'
 import { Context } from '../Context'
 import { useRegisterMutation } from '../hooks/useRegisterMutation'
 import { Div, Img, Span } from '../components/UserForm/styles'
+import { Helmet } from 'react-helmet'
 import { useLoginMutation } from '../hooks/useLoginMutation'
+
 export const NotRegisteredUser = () => {
   const { activateAuth } = useContext(Context)
 
   return (
     <>
+      <Helmet>
+        <title>Iniciar sesión | Petgram 🐶</title>
+        <meta name='description' content='aqui puedes registrarte o iniciar sesion' />
+      </Helmet>
       <Div>
         <Img src='https://cdn-icons-png.flaticon.com/512/4216/4216317.png' />
       </Div>

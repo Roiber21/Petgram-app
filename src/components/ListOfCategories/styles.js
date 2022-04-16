@@ -32,3 +32,11 @@ padding: 0 8px;
 list-style: none;
 
 `
+export const Img = styled.img`
+width: 50px;
+position: relative;
+bottom:10px ;
+left:400px;
+height: 50px;
+
+`
